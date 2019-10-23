@@ -2,6 +2,7 @@ from pprint import pprint
 from bs4 import BeautifulSoup as bs
 import requests
 import re
+import json
 import pandas as pd
 
 
@@ -84,6 +85,9 @@ headers = {'accept': '*/*',
            'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.2 Safari/605.1.15'}
 
 result = parse_sj(headers, 10)
+
+with open('sj.json', 'w', encoding='utf-8') as f:
+    json.dump(result, f)
 
 pprint(result)
 
