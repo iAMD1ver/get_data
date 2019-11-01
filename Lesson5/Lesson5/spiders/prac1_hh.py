@@ -2,7 +2,6 @@
 import scrapy
 from scrapy.http import HtmlResponse
 from Lesson5.Lesson5.items import Lesson5Item
-import pprint
 
 
 class Prac1HhSpider(scrapy.Spider):
