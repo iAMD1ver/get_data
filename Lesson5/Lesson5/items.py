@@ -19,3 +19,15 @@ class Lesson5Item(scrapy.Item):
     company_link = scrapy.Field()
     experience = scrapy.Field()
     industry = scrapy.Field()
+
+
+class Lesson5ItemSj(scrapy.Item):
+    # define the fields for your item here like:
+    _id = scrapy.Field()
+    name = scrapy.Field()
+    vacancy_link = scrapy.Field()
+    salary = scrapy.Field()
+    company_name = scrapy.Field()
+    company_link = scrapy.Field()
+    experience = scrapy.Field()
+    industry = scrapy.Field()
