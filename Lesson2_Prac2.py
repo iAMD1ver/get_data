@@ -2,6 +2,7 @@ from pprint import pprint
 from bs4 import BeautifulSoup as bs
 import requests
 import re
+import json
 import pandas as pd
 
 
@@ -76,3 +77,6 @@ headers = {'accept': '*/*',
 result = parse_hh(headers, 2)
 
 pprint(result)
+
+with open('hh.json', 'w', encoding='utf-8') as f:
+    json.dump(result, f)
